@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TaskPulse</string>
+    <string name="start_btn">Start</string>
+    <string name="reset_btn">Reset</string>
+    <string name="stop_btn">Stop</string>
+    <string name="sign_up">Don\'t have an Account? Sign Up</string>
+    <string name="reminder_btn">Set Reminder</string>
+</resources>

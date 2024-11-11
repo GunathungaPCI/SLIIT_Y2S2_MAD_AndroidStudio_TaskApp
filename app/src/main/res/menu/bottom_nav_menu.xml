@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:visibility="visible"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="@color/blue3"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/nav_tasks"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="25dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Tasks"
+            android:scaleType="fitCenter"
+            android:src="@drawable/task1" />
+
+        <ImageButton
+            android:id="@+id/nav_timer"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="25dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Timer"
+            android:scaleType="fitCenter"
+            android:src="@drawable/timmer3" />
+
+        <ImageButton
+            android:id="@+id/nav_reminders"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="25dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Reminders"
+            android:scaleType="fitCenter"
+            android:src="@drawable/remider2" />
+
+        <ImageButton
+            android:id="@+id/nav_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Profile"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile4" />
+    </LinearLayout>
+
+</FrameLayout>

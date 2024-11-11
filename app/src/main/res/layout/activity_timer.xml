@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my5bg"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="35dp"
+        android:text="00:00:00"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/getstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timerTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/button_background"
+        android:text="@string/start_btn"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/getstart"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/button_background"
+        android:text="@string/stop_btn"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getstart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/button_background"
+        android:text="@string/reset_btn"
+        android:textColor="@color/black" />
+
+    <include
+        android:id="@+id/bottom_navigation"
+        layout="@menu/bottom_nav_menu" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="100dp"
+        android:text="Countdown Timer"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

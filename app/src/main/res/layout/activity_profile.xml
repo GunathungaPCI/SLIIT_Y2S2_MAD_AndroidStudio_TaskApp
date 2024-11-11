@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my5bg"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/profileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="User Profile"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Username: @Chathu"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/editProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#CD5C5C"
+        android:text="Edit Profile" />
+
+    <!-- Navigation Bar -->
+
+    <TextView
+        android:id="@+id/appSettingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editProfileButton"
+        android:layout_marginTop="110dp"
+        android:text="Settings"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/changePasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appSettingsTitle"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/button_background"
+        android:text="Change Password" />
+
+    <Button
+        android:id="@+id/notificationSettingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/changePasswordButton"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/button_background"
+        android:text="Notification Settings" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notificationSettingsButton"
+        android:layout_marginTop="98dp"
+        android:backgroundTint="#CD5C5C"
+        android:text="Logout" />
+
+    <include
+        android:id="@+id/bottom_navigation"
+        layout="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

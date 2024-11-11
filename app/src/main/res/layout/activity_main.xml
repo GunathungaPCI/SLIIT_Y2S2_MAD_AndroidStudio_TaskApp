@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my5bg">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/taskRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/navigationBar"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/navigationBar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Add Task"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/button_background" />
+
+    <!-- Navigation Bar -->
+    <FrameLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/blue3"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/nav_tasks"
+                android:layout_width="88dp"
+                android:layout_height="59dp"
+                android:layout_marginEnd="25dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Tasks"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/task1" />
+
+            <ImageButton
+                android:id="@+id/nav_timer"
+                android:layout_width="78dp"
+                android:layout_height="59dp"
+                android:layout_marginEnd="25dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Timer"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/timmer3" />
+
+            <ImageButton
+                android:id="@+id/nav_reminders"
+                android:layout_width="72dp"
+                android:layout_height="59dp"
+                android:layout_marginEnd="25dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Reminders"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/remider2" />
+
+            <ImageButton
+                android:id="@+id/nav_profile"
+                android:layout_width="43dp"
+                android:layout_height="41dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Profile"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/profile4" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
